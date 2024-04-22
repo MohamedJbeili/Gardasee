@@ -1,0 +1,344 @@
+
+
+
+/* Variable */
+:root{
+--mainColor:#1c3f6f;
+--sekundaerColor:#B0D1FF;
+--dritteColor:#eee;
+--vierteColor:#307CE6;
+--fünfteColor:#f5a003;
+}
+/* Global */
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--mainColor);
+}
+body{
+    background-color: #333;
+}
+ul{list-style: none;}
+a{text-decoration: none;}
+img{
+    max-width: 100%;
+}
+.center{
+    text-align: center;
+}
+.d-none{
+    display: none;
+}
+
+/* Wrapper Eigenschaft */
+.wrapper{
+    
+    background-color: #fff;
+}
+
+/* Header beginnt */
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+header div.logo{
+    margin-left: 2rem;
+    width: 150px;
+    margin-top: 2rem;
+   
+}
+header div.title{
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+    
+}
+header div.title h1{
+    font-size: 5rem;
+    color: var(--mainColor);
+}
+header div.title p{
+    font-size: 2.5rem;
+    color: var(--fünfteColor);
+}
+header div.bar{display: none;}
+header nav{
+    width: 100%;
+    background-color: var(--mainColor);
+    height: 45px;
+    margin-top: 1rem;
+    text-align: right;
+    padding-inline:2rem ;
+    position:sticky ;
+     top: 10rem;
+    z-index: 1000;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li a{
+    color: #fff;
+    line-height: 45px;
+    padding-inline: 1rem;
+    font-size: 1.3rem;
+}
+header nav ul li:hover{
+    background-color: var(--fünfteColor);
+}
+
+
+/* Main beginnt */
+main{
+width: 100%;
+position: relative;
+}
+main div.hero{
+    width: 100%;
+    height: 800px;
+    background: url(../Bilder/bg.jpg) no-repeat bottom/cover ;
+    margin-bottom: 1rem;
+}
+main h2{
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    color: var(--fünfteColor);
+    font-size: 2rem;
+}
+main div.radtouren{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--dritteColor);
+    
+    padding: 2rem 1rem;
+    
+}
+main div.radtouren div{
+    flex: 1;
+    text-align: center;
+}
+main div.radtouren div h3{
+    margin-bottom: 1rem;
+    
+}
+
+main div.radtouren div h3 a{
+    color: var(--mainColor);
+    font-size: 1.8 rem;
+}
+main div.radtouren div p{
+    display: none; 
+    line-height: 1.5;
+    font-size: 1.8 rem;
+    font-weight: bold;
+    color: var(--vierteColor);
+
+  
+}
+main div.radtouren div h3:hover + p{
+    display: block;
+}
+main div.info{
+     display: flex;
+    justify-content: space-between;
+    margin-block: 2rem;
+    padding-inline: 2.2rem;
+    
+
+}
+main div.info div.see{
+    width:60%;
+    position: relative;
+}
+main div.info div.see div.tourArtIcons{
+    position: absolute;
+    z-index: 999;
+    width: 240px;
+    left:-140px;
+    bottom: 0;
+    display: flex;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+main div.info div.see  div.tourArtIcons:hover{
+    left:0;
+}
+main div.info div.see div.tourArtIcons div{
+    width: 100px;
+    background-color: rgba(28, 63, 111, .7);
+    padding: 0.5rem;
+}
+main div.info div.see div.tourArtIcons div img{
+    padding-bottom: 0.1rem;
+    background-color:var(--mainColor);
+}
+main div.info div.see div.tourArtIcons h4{
+    background-color: var(--mainColor);
+    color: #fff;
+    width: 140px;
+    height: fit-content;
+    padding: 0.2rem;
+    border-radius: 0 15px 15px 0;
+    -webkit-border-radius: 0 15px 15px 0;
+    -moz-border-radius: 0 15px 15px 0;
+    -ms-border-radius: 0 15px 15px 0;
+    -o-border-radius: 0 15px 15px 0;
+    text-align: center;
+}
+
+main div.info div.tourInfo{
+    width:35%;
+    
+}
+main div.info div.tourInfo img{
+   margin-bottom: 2rem;
+}
+main div.info div.tourInfo p{
+   
+    line-height: 1.5;
+}
+
+
+/* Radtouren Bereich */
+main .radtourenInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 2rem;
+    padding-inline: 2.2rem;
+    display: none;
+    
+}
+main .radtourenInfo object{
+    width:60%;
+}
+main .radtourenInfo article{
+    width:35%;
+    height: fit-content;
+    box-shadow: 1px 1px 10px #555;
+    padding: 1rem;
+
+    
+}
+main .radtourenInfo article h3{
+    font-size: 2rem;
+    margin-bottom: 1 rem;
+}
+main .radtourenInfo article h3 + p{
+    font-size: 1.3rem;
+    color: var(--fünfteColor);
+    font-weight: bold;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+
+/* Footer beginnt */
+footer{
+    height: 70px;
+    background-color: var(--mainColor);
+    color: #fff;
+
+}
+footer p{
+    line-height: 70px;
+    font-size: 1.8 rem;
+}
+
+/* **********************************
+   ******Media Query für Tablet******
+   **********************************/
+
+@media (min-width:768px) and (max-width:992px) {
+   
+   /* Header beginnt */
+header div.logo{width: 100px;  margin-top: 1rem;}
+header div.title{margin-bottom: 0,5rem;}
+header div.title h1{font-size: 3.5rem;}
+header div.title p{font-size: 1.8rem;}
+header div.bar{display: none;}
+header nav{height: 38px; margin-top: 0; text-align: right;padding-inline:2rem ;}
+header nav ul li a{line-height: 38px; font-size: 1.2rem;}
+/* Main beginnt */
+main div.hero{height: 500px;}
+main h2{font-size: 1.5rem;}
+main div.radtouren div p{font-size: 1.6 rem;}
+main div.info{display: block; margin-bottom: 1rem;}
+main div.info :is(div.see,div.tourInfo){
+    width:90%;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+}
+
+main div.info div.see div.tourArtIcons{left:-185px;}
+main div.info div.tourInfo img{margin-bottom: 1rem; width: 100%;}
+    main div.info div.tourInfo p{
+        margin-bottom: 3rem;
+    }
+main .radtourenInfo{display: block !important; }
+main .radtourenInfo object{width: 100%; margin-inline: auto; margin-bottom: 1.5rem;}
+main .radtourenInfo article{width: 100%; margin-inline: auto;}
+
+    
+   
+
+}
+/* **********************************
+   ******Media Query für Mobile******
+   **********************************/
+
+@media (min-width:420px) and (max-width:600px){
+    /* Header beginnt */
+    header div.logo{width:100px;  margin: 1rem ;}
+    header div.title{display:none ;}
+    header div.bar{
+     display: block;
+     width: 50px;
+     height: 50px;
+     margin: 2.2rem 1rem 0 0;
+     text-align: center;
+     cursor: pointer;
+    }
+    header nav{
+     display: none;
+    }
+    
+    /* Main beginnt */
+    header nav{padding-inline: 0; height: auto;}
+    header nav ul li{display: block; text-align: center;}
+    main div.hero{height: 200px;}
+    main h2{font-size: 1.3rem;} 
+    main div.radtouren{display: block;padding:1rem;}
+    main div.radtouren br{display: none;}
+    main div.radtouren div h3 {margin-bottom: 0.5rem;}
+    main div.radtouren div p {margin-bottom: 0.5rem;}
+    main div.info{display: block; margin-block: 1rem;}
+    main div.info :is(div.see,div.tourInfo){
+     width:95%;
+     margin-inline: auto;
+     margin-bottom: 1rem;}
+     main div.info div.see div.tourArtIcons{
+         width: 180px;
+         left:-110px;
+         
+     }
+     main div.info div.see div.tourArtIcons div{
+         width: 70px;
+     }
+    
+     main .radtourenInfo{display: block !important;}
+     main .radtourenInfo object{width: 100%; margin-inline: auto; margin-bottom: 1.5rem;}
+     main .radtourenInfo article{width: 100%; margin-inline: auto;}
+
+
+
+ }

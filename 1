@@ -1,0 +1,159 @@
+.wrapper{
+    margin-inline:auto ;
+    padding-top: 1rem;
+    background-color: #fff;
+}
+
+/* Header beginnt */
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+header div.logo{
+width: 100px;
+margin-left: 1rem;
+}
+header div.title{
+    margin-right: 1rem;
+}
+header div.title h1{
+    font-size: 3rem;
+    color: var(--mainColor);
+}
+header div.title p{
+    font-size: 1.5rem;
+    color: var(--fünfteColor);
+}
+header nav{
+    width: 100%;
+    background-color: var(--mainColor);
+    height: 35px;
+    margin-top: 1rem;
+    text-align: right;
+    padding-inline:2rem ;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li a{
+    color: #fff;
+    line-height: 35px;
+    padding-inline: 0.5rem;
+}
+
+
+/* Main beginnt */
+main{
+width: 100%;
+position: relative;
+}
+main div.hero{
+    width: 100%;
+    height: 800px;
+    background: url(../Bilder/bg.jpg) no-repeat bottom/cover ;
+    margin-bottom: 1rem;
+}
+main h2{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    color: var(--fünfteColor);
+}
+main div.radtouren{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--dritteColor);
+    padding: 2rem 1rem;
+    
+}
+main div.radtouren div{
+    flex: 1;
+    text-align: center;
+}
+main div.radtouren div h3{
+    margin-bottom: 1rem;
+    
+}
+
+main div.radtouren div h3 a{
+    color: var(--mainColor)
+}
+main div.radtouren div p{
+    display: none; 
+    line-height: 1.5;
+  
+}
+main div.radtouren div h3:hover + p{
+    display: block;
+}
+main div.info{
+     display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding-inline: 2.2rem;
+    
+}
+main div.info div.see{
+    width:60%;
+
+    
+    
+    
+
+}
+
+main div.info div.tourInfo{
+    width:35%;
+}
+main div.info div.tourInfo img{
+   margin-bottom: 0.3rem;
+}
+main div.tourArtIcons{
+    position: absolute;
+    width: 200px;
+    left:-50px;
+    bottom: 1rem;
+    display: flex;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+main div.tourArtIcons:hover{
+    left:0;
+}
+main div.tourArtIcons div{
+    width: 50px;
+    background-color: #fff;
+    padding: 0.5rem;
+}
+main div.tourArtIcons div img{
+    padding-bottom: 0.5rem;
+    background-color: #307CE6;
+}
+main div.tourArtIcons h4{
+    background-color: var(--mainColor);
+    color: #fff;
+    width: 140px;
+    height: fit-content;
+    padding: 0.2rem;
+    border-radius: 0 15px 15px 0;
+    -webkit-border-radius: 0 15px 15px 0;
+    -moz-border-radius: 0 15px 15px 0;
+    -ms-border-radius: 0 15px 15px 0;
+    -o-border-radius: 0 15px 15px 0;
+    text-align: center;
+}
+
+
+
+
+/* Footer beginnt */
+footer{
+    height: 50px;
+    background-color: var(--mainColor);
+    color: #fff;
+
+}
